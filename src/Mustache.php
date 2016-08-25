@@ -18,7 +18,7 @@ class Mustache
     /**
      * @param array $options
      */
-    public function __construct(array $options)
+    public function __construct(array $options = [])
     {
         $this->mustache = new \Mustache_Engine($options);
     }
