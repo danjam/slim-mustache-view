@@ -1,0 +1,29 @@
+{
+  "name": "danjam/slim-mustache-view",
+  "type": "library",
+  "description": "Slim Framework 3 view helper for mustache.php",
+  "keywords": ["slim","framework","view","template","mustache"],
+  "homepage": "https://github.com/danjam/slim-mustache-view",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Danny James",
+      "email": "hello@dannyjames.net",
+      "homepage": "http://dannyjames.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "mustache/mustache": "^2.0",
+    "psr/http-message": "^1.0"
+  },
+  "require-dev": {
+    "slim/slim": "^3.0.0",
+    "phpunit/phpunit": "^4.6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Slim\\Views\\": "src"
+    }
+  }
+}
