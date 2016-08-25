@@ -1,6 +1,6 @@
 # slim-mustache-view
 
-[![Build Status](https://travis-ci.org/danjam/slim-mustache-view.svg?branch=master)](https://travis-ci.org/danjam/slim-mustache-view)
+[![Build Status](https://travis-ci.org/danjam/slim-mustache-view.svg?branch=master)](https://travis-ci.org/danjam/slim-mustache-view) [![Latest Stable Version](https://poser.pugx.org/danjam/slim-mustache-view/v/stable)](https://packagist.org/packages/danjam/slim-mustache-view)
 
 Simple [Slim 3](https://github.com/slimphp/Slim) view renderer for [Mustache.php](https://github.com/bobthecow/mustache.php)
 
