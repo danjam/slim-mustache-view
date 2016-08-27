@@ -5,8 +5,13 @@ namespace Slim\Views;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * Class Mustache
+ * Simple view renderer to use Mustache.php templates in Slim 3 views
+ *
  * @package Slim\Views
+ * @author Danny James <hello@dannyjames.net>
+ * @license https://github.com/danjam/slim-mustache-view/blob/master/LICENSE MIT
+ * @link https://github.com/slimphp/Slim
+ * @link https://github.com/bobthecow/mustache.php
  */
 class Mustache
 {
@@ -30,7 +35,7 @@ class Mustache
      * Fetch a rendered template
      *
      * @param mixed $template The mustache template string/path
-     * @param array $data The template data
+     * @param array|object $data The template data
      * @return string The rendered template
      */
     public function fetch($template, $data = [])
@@ -43,7 +48,7 @@ class Mustache
      *
      * @param ResponseInterface $response The PSR-7 response
      * @param mixed $template The mustache template string/path
-     * @param array $data The template data
+     * @param array|object $data The template data
      * @return ResponseInterface A PSR-7 response populated with the rendered mustache template
      */
     public function render(ResponseInterface $response, $template, $data = [])
@@ -57,6 +62,7 @@ class Mustache
      *
      * @param mixed $template The mustache template string/path
      * @return string The raw template contents
+     * @since 1.1.0
      */
     public function getRawTemplate($template)
     {
