@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/danjam/slim-mustache-view.svg?branch=master)](https://travis-ci.org/danjam/slim-mustache-view) [![Latest Stable Version](https://poser.pugx.org/danjam/slim-mustache-view/v/stable)](https://packagist.org/packages/danjam/slim-mustache-view)
 
-Simple [Slim 3](https://github.com/slimphp/Slim) view renderer for [Mustache.php](https://github.com/bobthecow/mustache.php)
+Simple [Slim 3 framework](https://github.com/slimphp/Slim) view renderer for [mustache](http://mustache.github.io/mustache.5.html) templates using [Mustache.php](https://github.com/bobthecow/mustache.php)
 
 ## Install
 
@@ -52,6 +52,12 @@ $container['view'] = function () {
 
     return $view;
 };
+```
+
+You can also capture raw template contents if needed. This can be useful for rendering inline templates, for example when also using [mustache.js](https://github.com/janl/mustache.js/)
+
+```php
+$this->view->getRawTemplate('some-template.html');
 ```
 
 ## Testing
