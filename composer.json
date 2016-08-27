@@ -1,7 +1,7 @@
 {
   "name": "danjam/slim-mustache-view",
   "type": "library",
-  "description": "Slim Framework 3 view helper for mustache.php",
+  "description": "Simple Slim 3 framework view renderer for mustache templates using Mustache.php",
   "keywords": ["slim","framework","view","template","mustache"],
   "homepage": "https://github.com/danjam/slim-mustache-view",
   "license": "MIT",
