@@ -14,8 +14,6 @@ $ composer require danjam/slim-mustache-view
 
 ## Usage
 
-The constructor takes an optional array of Mustache.php options. See the [Mustache.php documentation](https://github.com/bobthecow/mustache.php/wiki#constructor-options) for details.
-
 ```php
 // create Slim 3 app
 $app = new \Slim\App();
@@ -25,7 +23,6 @@ $container = $app->getContainer();
 
 // register Mustache view
 $container['view'] = function ($container) {
-    // constructor takes an optional array of Mustache.php options
     $view = new \Slim\Views\Mustache();
     
     return $view;
@@ -40,6 +37,21 @@ $app->get('/hello/{name}', function ($request, $response, $args) {
 
 // run the app
 $app->run();
+```
+
+The constructor takes an optional array of Mustache.php options. See the [Mustache.php documentation](https://github.com/bobthecow/mustache.php/wiki#constructor-options) for details.
+
+```php
+// register Mustache view
+$container['view'] = function () {
+    $view = new \Slim\Views\Mustache([
+        'cache' => './cache/mustache',
+        'loader' => new Mustache_Loader_FilesystemLoader('./views'),
+        'partials_loader' => new Mustache_Loader_FilesystemLoader('./views/partials')
+    ]);
+
+    return $view;
+};
 ```
 
 ## Testing
