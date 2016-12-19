@@ -50,7 +50,29 @@ class MustacheTest extends \PHPUnit_Framework_TestCase
         ]);
 
         $this->assertInstanceOf('Psr\Http\Message\ResponseInterface', $response);
+    }
+    
+    public function testGetRawTemplate()
+    {
+        $mockBody = $this->getMockBuilder('Psr\Http\Message\StreamInterface')
+            ->disableOriginalConstructor()
+            ->getMock();
 
+        $mockResponse = $this->getMockBuilder('Psr\Http\Message\ResponseInterface')
+            ->disableOriginalConstructor()
+            ->getMock();
 
+        $mockBody->expects($this->once())
+            ->method('write')
+            ->with("Test data, TEST\n")
+            ->willReturn(17);
+
+        $mockResponse->expects($this->once())
+            ->method('getBody')
+            ->willReturn($mockBody);
+
+        $template = $this->view->getRawTemplate($this->templateData);
+        
+        $this->assertSame($this->templateData, $template);
     }
 }
