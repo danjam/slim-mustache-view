@@ -19,7 +19,8 @@
   },
   "require-dev": {
     "slim/slim": "^3.0.0",
-    "phpunit/phpunit": "^4.6.0"
+    "phpunit/phpunit": "^4.6.0",
+    "satooshi/php-coveralls": "dev-master"
   },
   "autoload": {
     "psr-4": {
