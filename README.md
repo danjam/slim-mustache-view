@@ -1,6 +1,6 @@
 # slim-mustache-view
 
-[![Build Status](https://travis-ci.org/danjam/slim-mustache-view.svg?branch=master)](https://travis-ci.org/danjam/slim-mustache-view) [![Latest Stable Version](https://poser.pugx.org/danjam/slim-mustache-view/v/stable)](https://packagist.org/packages/danjam/slim-mustache-view)
+[![Build Status](https://travis-ci.org/danjam/slim-mustache-view.svg?branch=master)](https://travis-ci.org/danjam/slim-mustache-view) [![Latest Stable Version](https://poser.pugx.org/danjam/slim-mustache-view/v/stable)](https://packagist.org/packages/danjam/slim-mustache-view) [![Coverage Status](https://coveralls.io/repos/github/danjam/slim-mustache-view/badge.svg?branch=master)](https://coveralls.io/github/danjam/slim-mustache-view?branch=master)
 
 Simple [Slim 3 framework](https://github.com/slimphp/Slim) view renderer for [mustache](http://mustache.github.io/mustache.5.html) templates using [Mustache.php](https://github.com/bobthecow/mustache.php)
 
