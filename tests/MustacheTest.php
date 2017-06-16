@@ -4,8 +4,6 @@ namespace Slim\Tests\Views;
 
 use Slim\Views\Mustache;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
-
 class MustacheTest extends \PHPUnit_Framework_TestCase
 {
     /** @var Mustache */
@@ -51,7 +49,7 @@ class MustacheTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf('Psr\Http\Message\ResponseInterface', $response);
     }
-    
+
     public function testGetRawTemplate()
     {
         $template = $this->view->getRawTemplate($this->templateData);
