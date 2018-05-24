@@ -20,7 +20,7 @@
   "require-dev": {
     "slim/slim": "^3.0.0",
     "phpunit/phpunit": "^4.6.0",
-    "satooshi/php-coveralls": "dev-master"
+    "php-coveralls/php-coveralls": "^2.1"
   },
   "autoload": {
     "psr-4": {
